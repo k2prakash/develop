@@ -6,7 +6,7 @@ extern int sizeof_str(char * str);
 
 int main(){
     //printf("Hello World\n");
-    char str[] = "This is a string";
+    char str[] ="This is a string.";
     int str_size = 0;
     int rc = 0;
     int length = 0;
