@@ -10,10 +10,13 @@ int main(){
     int str_size = 0;
     int rc = 0;
     int length = 0;
+
     printf("%s\n", str);
     str_size = sizeof_str(str);
     printf("Size of the string is %d bytes\n", str_size);
-    length = 5;
+    printf("Enter the number of characters to perform the string reversal\n");
+    scanf("%d", &length);
+
     if (length != str_size){
     	printf("Performing string reversal for the first %d characters\n", length);
     }
