@@ -9,10 +9,18 @@ int main(){
     char str[] = "Hello World";
     int str_size = 0;
     int rc = 0;
+    int length = 0;
     printf("%s\n", str);
     str_size = sizeof_str(str);
     printf("Size of the string is %d bytes\n", str_size);
-    rc = reverse(str, 5);
+    length = 5;
+    if (length != str_size){
+    	printf("Performing string reversal for the first %d characters\n", length);
+    }
+    else {
+    	printf("Performing string reversal of the entire string\n");
+    }
+    rc = reverse(str, length);
     if (rc == 0) {
 	printf("%s\n", str);
     }
